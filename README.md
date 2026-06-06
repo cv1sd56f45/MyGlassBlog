@@ -2,13 +2,13 @@
 
 一个优雅的毛玻璃风格个人博客系统，基于 Next.js 15 构建，支持暗色模式、Markdown 文章、说说、相册、友链、时间线等丰富功能。
 
-> 灵感来源：[XinghuisamaBlogs](https://github.com/Xinghuisama/XinghuisamaBlogs) ，做了大幅简化，适合快速搭建自己的博客。
+> 灵感来源：[星辉萨玛博客](https://github.com/Xinghuisama/XinghuisamaBlogs) ，做了大幅简化，适合快速搭建自己的博客(本人没有跟原作者说，触犯源码的话，我将在24小时内删除)
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
 ![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-38bdf8?style=flat-square&logo=tailwindcss)
-![许可证](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![许可证](https://img.shields.io/badge/License-Apache%202.0-orange?style=flat-square&logo=apache)
 
 ---
 
@@ -163,7 +163,7 @@ date: 2026-06-06
 
 ## 🌐 部署到 Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/MyGlassBlog)
+[![使用 Vercel 部署](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/MyGlassBlog)
 
 1. Fork 本仓库
 2. 在 Vercel 中导入项目（Vercel 会自动检测 Next.js）
@@ -207,7 +207,11 @@ date: 2026-06-06
 
 ##许可证
 
-MIT © 2026 你的名字
+本文件依据 Apache 许可证第 2.0 版（“许可证”）授权；除遵守本许可证外，您不得使用本文件。您可在以下地址获取许可证副本：
+
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+除非适用法律另有要求或经书面同意，根据本许可证分发的软件均按“原样”提供，不附带任何形式的明示或默示担保或条件。有关许可权限及限制的具体规定，请参阅本许可证。
 
 ---
 
