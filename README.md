@@ -1,20 +1,20 @@
-#我的玻璃博客 ✨
+# My Glass Blog ✨
 
 一个优雅的毛玻璃风格个人博客系统，基于 Next.js 15 构建，支持暗色模式、Markdown 文章、说说、相册、友链、时间线等丰富功能。
 
-> 灵感来源：[星辉萨玛博客](https://github.com/Xinghuisama/XinghuisamaBlogs) ，做了大幅简化，适合快速搭建自己的博客(本人没有跟原作者说，触犯源码的话，我将在24小时内删除)
-
+> 灵感来源：[XinghuisamaBlogs](https://github.com/Xinghuisama/XinghuisamaBlogs) ，做了大幅简化，适合快速搭建自己的博客(本人没有跟原作者说，触犯源码的话，我将在24小时内删除)
+> 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
 ![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-38bdf8?style=flat-square&logo=tailwindcss)
-![许可证](https://img.shields.io/badge/License-Apache%202.0-orange?style=flat-square&logo=apache)
+![License](https://img.shields.io/badge/License-Apache%202.0-orange?style=flat-square&logo=apache)
 
 ---
 
 ## 🌟 特性
 
-- **毛玻璃设计**— 玻璃质感背景搭配渐变色光晕，优雅而不刺眼
+- **毛玻璃设计** — Glassmorphism 风格背景配合渐变色光晕，优雅而不刺眼
 - **暗色模式** — 支持亮/暗主题自动切换，适配系统偏好
 - **Markdown 写作** — 使用 Markdown 写文章，支持 GFM 语法、代码高亮
 - **说说功能** — 随时记录碎片化的想法和心情
@@ -163,7 +163,7 @@ date: 2026-06-06
 
 ## 🌐 部署到 Vercel
 
-[![使用 Vercel 部署](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/MyGlassBlog)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/MyGlassBlog)
 
 1. Fork 本仓库
 2. 在 Vercel 中导入项目（Vercel 会自动检测 Next.js）
@@ -179,13 +179,13 @@ date: 2026-06-06
 
 ```ts
 // 紫色系
-主题颜色：["#a18cd1", "#fbc2eb"]
+themeColors: ["#a18cd1", "#fbc2eb"]
 
 // 蓝色系
-主题颜色：["#2193b0", "#6dd5ed"]
+themeColors: ["#2193b0", "#6dd5ed"]
 
 // 绿色系
-主题颜色：["#11998e", "#38ef7d"]
+themeColors: ["#11998e", "#38ef7d"]
 ```
 
 ---
@@ -205,13 +205,13 @@ date: 2026-06-06
 
 ---
 
-##许可证
+## 📄 License
 
-本文件依据 Apache 许可证第 2.0 版（“许可证”）授权；除遵守本许可证外，您不得使用本文件。您可在以下地址获取许可证副本：
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
 [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-除非适用法律另有要求或经书面同意，根据本许可证分发的软件均按“原样”提供，不附带任何形式的明示或默示担保或条件。有关许可权限及限制的具体规定，请参阅本许可证。
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 ---
 
