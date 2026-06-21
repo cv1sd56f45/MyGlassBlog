@@ -1,0 +1,21 @@
+node_modules/
+.next/
+.DS_Store
+*.tsbuildinfo
+
+# 便携版打包产物（通过 GitHub Releases 分发，不进 git）
+*.zip
+
+# 便携版 Node.js（体积太大，不进 git；分发时打进 zip）
+node.exe
+
+# 临时/备份目录
+node_modules_npm_backup/
+node-portable/
+node-extract/
+MyGlassBlog-Portable/
+E:\文件\网站\MyGlassBlog-Portable\
+
+# macOS
+.DS_Store
+*.swp

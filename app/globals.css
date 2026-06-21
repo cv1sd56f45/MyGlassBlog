@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github-dark.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Inter", "Noto Serif SC", serif;
+    -webkit-font-smoothing: antialiased;
+    /* 缩短主题切换过渡，减少 GPU 持续渲染时间 */
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .dark .prose {
+    --tw-prose-body: #cbd5e1;
+    --tw-prose-headings: #f1f5f9;
+    --tw-prose-links: #818cf8;
+    --tw-prose-code: #c4b5fd;
+  }
+
+  /* 性能：提示浏览器哪些元素会变化 */
+  .glass-card { will-change: auto; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.3); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(99,102,241,0.7); }
+* { scrollbar-width: thin; scrollbar-color: rgba(99,102,241,0.3) transparent; }
+
+/* Glass card — 性能优化版
+   - 降低 blur 值（16px→8px），大幅减少 GPU 开销
+   - 移除 hover 的 translateY（避免触发 layout / composite）
+   - 缩短 transition 时长
+*/
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.25s ease, background-color 0.25s ease;
+}
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.glass-card:hover {
+  box-shadow: 0 6px 28px rgba(99, 102, 241, 0.10);
+  /* 不再 transform: translateY，避免整卡重排 */
+}
+
+/* Gradient animation — 放慢到 30s 减少重绘频率 */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 简易淡入，替代 framer-motion 复杂动画 */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.35s ease-out both;
+}
+
+/* 图片 hover 轻量化 */
+.glass-card img {
+  transition: transform 0.35s ease;
+}
+.glass-card:hover img {
+  transform: scale(1.03);
+}
