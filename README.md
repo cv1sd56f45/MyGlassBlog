@@ -8,7 +8,7 @@
 ![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-38bdf8?style=flat-square&logo=tailwindcss)
-![License](https://img.shields.io/badge/License-Apache%202.0-orange?style=flat-square&logo=apache)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square&logo=opensourceinitiative)
 
 ---
 
@@ -22,7 +22,6 @@
 - **友链系统** — 收录志同道合的博客朋友们
 - **时间线** — 记录人生的里程碑时刻
 - **轻量快速** — 移除重型动画库，首屏 JS 仅 ~110 kB
-- **静态生成** — Vercel 部署即享全球 CDN 加速
 - **管理员后台** — 浏览器内直接管理文章、说说、相册和站点设置
 
 ---
@@ -225,18 +224,6 @@ date: 2026-06-06
 
 ---
 
-## 🌐 部署到 Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/MyGlassBlog)
-
-1. Fork 本仓库
-2. 在 Vercel 中导入项目（Vercel 会自动检测 Next.js）
-3. 点击 Deploy，片刻后即可获得你的博客地址
-
-> ⚠️ **注意**：管理员后台（`/admin`）依赖服务端 API 路由，**必须使用 Vercel 的 Serverless Function**（保持默认部署设置即可，无需手动配置）。
-
----
-
 ## 🎨 定制主题颜色
 
 在 `siteConfig.ts` 中修改 `themeColors`，支持任意数量的颜色，背景会生成对应颜色的动态渐变。例如：
@@ -268,13 +255,27 @@ themeColors: ["#11998e", "#38ef7d"]
 
 ---
 
+## 🙏 致谢
+
+本项目由 **QClaw (OpenClaw)** 协助开发完成。
+
+在开发过程中，QClaw 协助完成了以下工作：
+- 项目架构设计与搭建（Next.js 15 + Tailwind CSS 4）
+- 全部前端页面及后台管理系统的实现
+- 便携版打包方案（node.exe + C# 启动器）
+- 免费 API 集成（天气、评论、违禁词检测等）
+- 动态渲染改造、性能优化（移除 framer-motion，JS 体积降低至 ~110KB）
+
+感谢 QClaw 的全程陪伴与付出 ❤️
+
+> QClaw 是一个运行在本地的 AI 助手，基于 OpenClaw 框架。
+> 项目地址：https://github.com/openclaw/openclaw
+
+---
+
 ## 📄 License
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
-
-[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+MIT License © 2026 cv1sd56f45 — see [LICENSE](LICENSE) file for details.
 
 ---
 
