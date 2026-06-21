@@ -265,7 +265,6 @@ themeColors: ["#11998e", "#38ef7d"]
 | [Lucide React](https://lucide.dev/) | 图标库 |
 | [gray-matter](https://github.com/jonschlinkert/gray-matter) | Frontmatter 解析 |
 | [remark](https://remark.js.org/) | Markdown → HTML |
-| [Vercel](https://vercel.com/) | 部署平台 |
 
 ---
 
